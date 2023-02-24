@@ -41,7 +41,7 @@ for (let i = 0; i < names.length; i++) {
 }
 console.log(namesTogether);
 
-/* Creat a new array called nameLengths and write a loop to iterate
+/* 5. Create a new array called nameLengths and write a loop to iterate
 over the previously crated names array. Add the length of each name
 to the nameLengths array
 */
@@ -50,3 +50,11 @@ for (let i = 0; i < names.length; i++) {
     nameLengths.push(names[i].length); //push the lengths of names to new array
 } //write for loop
 console.log(nameLengths);
+
+/* 6. Write a loop to iterate over the nameLengths array and calculate 
+the sum of all the elements in the array. 
+*/
+for (i = 0; i < nameLengths; i++){ //write a for loop
+    sum += nameLengths[i]; //define sum
+}
+console.log(sum); //print
