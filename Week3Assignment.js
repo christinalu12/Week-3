@@ -70,3 +70,9 @@ function myFunction(word, n){ //delcare function
     return myWord; 
 }
 console.log(myFunction("Hello", 3)); //call function to check
+
+// 8. Write a function w/ 2 parameteres (firstName, lastName), returns fullName.
+function fullName (firstName, lastName){ //write function with return statement
+    return firstName + " " + lastName;
+}
+console.log(fullName("Christina", "Lujan")); //call to check
