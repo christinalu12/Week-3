@@ -87,3 +87,14 @@ function numbersSum(numbers){ //name function and parameters
     return sum > 100 // return to find value
 } console.log("true")// console true if value is greater than 100
 console.log(numbersSum([5, 67, 89]));// call function to check
+
+// 10. Write a function that takes an array of numbers and returns the ave of the elements
+function averages(numbers){ //declare function
+    let sum = 0; //set sum to 0
+    for (let i = 0; i < numbers.length; i++){ //use for loop to find average
+        sum += numbers[i];
+    }
+    let average = sum / numbers.length;
+    return average;
+}
+console.log(averages([1, 2, 3, 4, 5])); //call function to check
