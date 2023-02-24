@@ -21,3 +21,32 @@ for(let i = 0; i < ages.length; i++){
 } //creating a for loop to find the sum of all the ages and iterate through array
 let average = sum / ages.length; // finding the average
 console.log(average); //printing average 
+
+//2. Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; //declaring array
+console.log(names); //making sure it works
+
+//2.a Use a loop to iterate through and calculate average number of letters per name
+let newSum = 0;
+for (let i = 0; i < names.length; i++){
+    newSum = newSum + names[i].length;
+} //creating a for loop
+let newAverage = newSum / names.length; //finding average
+console.log(newAverage); //printing answer
+
+//2.b Use a loop to iterate through the array again and concatenate all the names together, separated by spaces
+let namesTogether = ""; // to initialize empty string
+for (let i = 0; i < names.length; i++) {
+    namesTogether += names[i] + " ";
+}
+console.log(namesTogether);
+
+/* Creat a new array called nameLengths and write a loop to iterate
+over the previously crated names array. Add the length of each name
+to the nameLengths array
+*/
+let nameLengths = []; //create empty array
+for (let i = 0; i < names.length; i++) {
+    nameLengths.push(names[i].length); //push the lengths of names to new array
+} //write for loop
+console.log(nameLengths);
