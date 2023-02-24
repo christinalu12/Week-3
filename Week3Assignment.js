@@ -76,3 +76,14 @@ function fullName (firstName, lastName){ //write function with return statement
     return firstName + " " + lastName;
 }
 console.log(fullName("Christina", "Lujan")); //call to check
+
+//9. Write a function that takes an array of nums and returns average
+
+function numbersSum(numbers){ //name function and parameters
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++){ //use for loop to iterate
+        sum += numbers[i];//use to find sum of elements
+    }
+    return sum > 100 // return to find value
+} console.log("true")// console true if value is greater than 100
+console.log(numbersSum([5, 67, 89]));// call function to check
