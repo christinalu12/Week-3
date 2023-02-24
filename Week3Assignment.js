@@ -58,3 +58,15 @@ for (i = 0; i < nameLengths; i++){ //write a for loop
     sum += nameLengths[i]; //define sum
 }
 console.log(sum); //print
+
+/* 7. Write a function that takes two parameters, word and n, as arguments
+ and returns the word concatenated to itself n number of times.
+ */
+function myFunction(word, n){ //delcare function
+    let myWord = ""; // created empty string
+    for (let i = 0; i <n; i++){ //for loop to concat parameters
+        myWord += word;
+    }
+    return myWord; 
+}
+console.log(myFunction("Hello", 3)); //call function to check
