@@ -98,3 +98,23 @@ function averages(numbers){ //declare function
     return average;
 }
 console.log(averages([1, 2, 3, 4, 5])); //call function to check
+
+// 11. Write a function where average of elements in arr1 > elements in arr2
+function twoAverages(arr1, arr2){ //declare function and make sums = 0
+    let sum1 = 0
+    let sum2 = 0;
+    for (let i = 0; i < arr1.length; i++){ //using a for loop to find sum of arr1
+        sum1 += arr1[i];
+    }
+    const avg1 = sum1 / arr1.length; //divide sum1 by num of elemets for average
+    for (i = 0; i < arr2.length; i++){//repeat the same for arr2
+        sum2 += arr2[i];
+    }
+    const avg2 = sum2 /arr2.length
+    return avg1 > avg2 //if returns greater than prints "True"
+}
+console.log("True");
+
+let array1 = [1, 2, 3]; //call function to check
+let array2 = [4, 5, 6];
+console.log(twoAverages(array1, array2)); //returns false, function works
