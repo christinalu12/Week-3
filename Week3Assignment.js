@@ -88,7 +88,7 @@ function numbersSum(numbers){ //name function and parameters
 } console.log("true")// console true if value is greater than 100
 console.log(numbersSum([5, 67, 89]));// call function to check
 
-// 10. Write a function that takes an array of numbers and returns the ave of the elements
+//10. Write a function that takes an array of numbers and returns the ave of the elements
 function averages(numbers){ //declare function
     let sum = 0; //set sum to 0
     for (let i = 0; i < numbers.length; i++){ //use for loop to find average
@@ -99,7 +99,7 @@ function averages(numbers){ //declare function
 }
 console.log(averages([1, 2, 3, 4, 5])); //call function to check
 
-// 11. Write a function where average of elements in arr1 > elements in arr2
+//11. Write a function where average of elements in arr1 > elements in arr2
 function twoAverages(arr1, arr2){ //declare function and make sums = 0
     let sum1 = 0
     let sum2 = 0;
@@ -118,3 +118,17 @@ console.log("True");
 let array1 = [1, 2, 3]; //call function to check
 let array2 = [4, 5, 6];
 console.log(twoAverages(array1, array2)); //returns false, function works
+
+/*12. Write function called willBuyDrinkk; Use isHotOutside and moneyInPocket
+ and returns true if it is hot outside and moneyInPocket > 10.50
+ */
+function willBuyDrink(isHotOutside, moneyInPocket){//declare function
+    if(isHotOutside && moneyInPocket > 10.50){//use if statement to show parameters
+        return true;//return true if statement meets parameters set
+    }
+}
+const hot = true; //create new test variables
+const money = 12.50
+const buyDrink = willBuyDrink(hot, money); //call function to test
+console.log(buyDrink);
+
