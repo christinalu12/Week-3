@@ -132,3 +132,11 @@ const money = 12.50
 const buyDrink = willBuyDrink(hot, money); //call function to test
 console.log(buyDrink);
 
+//13. Write your own function & explain what it does
+function hairColor(color1){ //this is a function shows if hair color is blue or not.
+    if(color1 === 'blue'){ //used an if statement to show haircolor is stricly = blue to return true
+        return true; //the statment returns true if color1 is blue
+    }
+    return false; //returns false if color1 is any other color
+} 
+console.log(hairColor('blue')); //called the function to make sure it works
